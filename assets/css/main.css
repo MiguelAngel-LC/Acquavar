@@ -212,15 +212,25 @@ section {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
   border: 6px solid #fff;
   border-color: var(--color-primary) transparent var(--color-primary) transparent;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height:100px;
   -webkit-animation: animate-preloader 1.5s linear infinite;
   animation: animate-preloader 1.5s linear infinite;
+}
+#preloader::after{
+  content: "";
+  position: fixed;
+  background: url("../img/logos/logo_clipdrop-background-removal.png") center center / cover;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 @-webkit-keyframes animate-preloader {
